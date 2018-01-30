@@ -1,0 +1,238 @@
+h1 {
+	background-color: #4aaaa5;
+	color: #f8fcfd;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 2em;
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-start;
+	padding: 30px;
+	margin-left: 472px;
+}
+
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 2em;
+	font-weight: bold;
+	padding-bottom: 20px;
+	margin: 10px;
+	color: #4aaaa5;
+	border-bottom:solid 2px #dedede;
+}
+
+h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 10px;
+	color: #4aaaa5;
+	border-bottom:solid 2px #dedede;
+}
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #666666;
+	background-image: url("../images/brickwall.png");
+	background-repeat: repeat;
+	background-color: ghostwhite;
+
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	border-bottom: solid 2px lightgray;
+}
+
+.nav1 a {
+	text-decoration: none;
+	color: darkgray;
+}
+
+.nav1 li {
+	display: inline;
+}
+
+ul.nav1 {
+	margin-right: 472px;
+}
+.mainContent {
+	float: left;
+	width: 594px;
+	padding: 25px;
+	margin-top: 40px;
+	margin-left: 472px;
+	border: 3px solid #dddddd;
+	background-color: #ffffff;
+}
+
+.mainPic {
+	float: left;
+}
+
+.connect {
+	float: left;
+	width: 224px;
+	padding: 20px;
+	margin-top: 40px;
+	margin-left: 40px;
+	border: 3px solid #dddddd;
+	background-color: #ffffff;
+}
+
+.socialIcons {
+	display: flex;
+	justify-content: space-evenly;
+	margin:	5px;
+	padding: 5px 5px;
+}
+
+p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+
+li {
+	color: darkgray;
+}
+
+.midLine {
+	width: 960px;
+	position: fixed;
+  top: 25%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	border-bottom: 5px solid red;
+}
+
+.footer {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 0em;
+	border-top: solid 7.5px #4aaaa5; 
+	margin-top:40px;
+	width: 100%;
+	height: 60px;
+	background-color: #666666;
+	color: #dddddd;
+	font-size: 85%;
+}
+
+p.form {
+	border: 1px solid #dddddd;
+	color: #dddddd;
+	font-size: 75%;
+	padding: 3px;
+	line-height: 1.5em;
+}
+
+p.formMessage {
+	border: 1px solid #dddddd;
+	color: #dddddd;
+	height: 300px;
+	line-height: 1.5em;
+}
+
+p.submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 40px;
+	background-color: #4aaaa5;
+	color: #cccccc;
+	margin-top: 20px;
+}
+
+.mainContentPortfolio {
+	display: flex;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.portfolioItems {
+	margin: 5px 0px;
+	position: relative;
+	text-align: center;
+}
+
+.portfolioItemsHide {
+	visibility: hidden;
+	margin: 5px 0px;
+	position: relative;
+	text-align: center;
+}
+
+p.projectName {
+	background-color: #4aaaa5;
+	color: ghostwhite;
+	width: 100%;
+	padding: 15px 0px;
+	bottom: 14px;
+	position: absolute;
+}
+
+/* media Queries */
+
+@media only screen and (max-width: 640px) {
+	.mainContent-s {
+		margin-left: 0px;
+		width: 100%;
+	}
+	
+	nav	h1 {
+		margin: 0;
+	}
+
+	ul.nav1 {
+		margin-right: 0px;
+	}
+	
+	.connect {
+		/* float: left; */
+		padding: 20px;
+		width: 100%;
+		margin-left: 0;
+	}	
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+	body {
+		background-color: red;
+	}
+
+	.mainContent-s {
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	h1 {
+		margin-left: 0px;
+	}
+
+	ul.nav1 {
+		margin-right: 0px;
+}
+
+@media only screen and (min-width: 980px) {
+
+	.mainContent-s {
+		margin-left: 0px;
+	}
+	
+	.nav h1 {
+		margin-left: 0px;
+	}
+
+	ul.nav1 {
+		margin-right: 0px;
+}
